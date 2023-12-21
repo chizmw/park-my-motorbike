@@ -12,15 +12,27 @@ updates:
       interval: weekly
       day: tuesday
     versioning-strategy: increase-if-necessary
+    groups:
+      python:
+        patterns:
+          - '*'
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
       day: tuesday
+    groups:
+      github-actions:
+        patterns:
+          - '*'
 
   - package-ecosystem: terraform
     directory: /terraform
     schedule:
       interval: weekly
       day: tuesday
+    groups:
+      terraform:
+        patterns:
+          - '*'
