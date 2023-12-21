@@ -1,0 +1,8 @@
+{
+  "name": "park-my-motorbike",
+  "version": "0.0.0",
+  "description": "This is Park My Motorbike",
+  "repository": "git@github.com:chizmw/park-my-motorbike.git",
+  "author": "Chisel <chisel@malik-wright.uk>",
+  "license": "CC-BY-NC-ND-4.0"
+}
