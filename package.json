@@ -4,5 +4,9 @@
   "description": "This is Park My Motorbike",
   "repository": "git@github.com:chizmw/park-my-motorbike.git",
   "author": "Chisel <chisel@malik-wright.uk>",
-  "license": "CC-BY-NC-ND-4.0"
+  "license": "CC-BY-NC-ND-4.0",
+  "dependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@svitejs/changesets-changelog-github-compact": "^1.1.0"
+  }
 }
