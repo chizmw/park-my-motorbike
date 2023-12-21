@@ -23,12 +23,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: '${{ secrets.CHANGESETS_TOKEN }}'
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -45,7 +45,7 @@ jobs:
 
       # we use ourself to get the information for the release
       - name: Get Change Info
-        uses: chizovation/changesets-changelog-info@0.1.2
+        uses: chizovation/changesets-changelog-info@v0.1.5
         id: get-changelog-info
 
       - name: Push Tags

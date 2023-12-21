@@ -38,7 +38,7 @@ jobs:
       - run: |
           echo "Generated: ${{ steps.generator.outputs.name }}"
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         if: success() && steps.find-pr.outputs.number
         with:
           # https://github.com/marketplace/actions/add-commit#working-with-prs
@@ -50,7 +50,7 @@ jobs:
 
       - name: Render template
         id: render
-        uses: chuhlomin/render-template@v1.7
+        uses: chuhlomin/render-template@v1.9
         if: success() && steps.find-pr.outputs.number
         with:
           template: .github/dependabot-changeset.template.md
