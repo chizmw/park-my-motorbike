@@ -461,3 +461,4 @@ tags
 
 # End of https://www.toptal.com/developers/gitignore/api/go,git,vim,node,ruby,terraform,python
 .terraform.lock.hcl
+.envrc
