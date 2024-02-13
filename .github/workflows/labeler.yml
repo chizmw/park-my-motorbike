@@ -14,6 +14,6 @@ jobs:
     name: Add Labels to PRs
     runs-on: ubuntu-latest
     steps:
-      - uses: fuxingloh/multi-labeler@v2
+      - uses: fuxingloh/multi-labeler@v4
         with:
           github-token: '${{ secrets.CHANGESETS_TOKEN }}'
